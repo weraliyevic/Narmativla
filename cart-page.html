@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <!-- Header  -->
 
     <header class="header">
@@ -129,30 +130,87 @@
 
     </header>
 
-    <main>
-        <!-- LOG IN  -->
-        <!-- Rozmatov Sardor -->
-        <div class="login__inner container">
-            <div class="login">
-                <div class="login__img">
-                    <img src="./assets/images/img-sidee.png" alt="img-sidee">
-                </div>
+    <!-- Cart section  -->
+    <div class="cartpage-inner container">
+        <h2 class="cart-home">Home <img src="./assets/icons/line.svg" alt="line"><span>Cart</span></h2>
 
-                <div class="login__form">
-                    <h1>Log in to Exclusive</h1>
-                    <p>Enter your details below</p>
-                    <input type="text" class="login__form-input" placeholder="Email or Phone Number">
-                    <input type="password" class="login__form-input" placeholder="Password">
-
-                    <div class="login__btn">
-                        <button>Log In</button>
-                        <a href="#" class="forgot-password-link">Forget Password?</a>
-                    </div>
-                </div>
+        <div class="cartpage">
+            <div class="cartpage__item">
+                <p>Product</p>
+                <p>Price</p>
+                <p>Quantity</p>
+                <p>Subtotal</p>
             </div>
 
+            <div class="cartpage__item2">
+                <div class="cartpage_img">
+                    <img src="./assets/icons/small-monitor.svg" alt="small-monitor">
+                    <button class="product__remove">
+                        <img src="./assets/icons/icon-cancel (2).svg" alt="icon-cancel">
+                    </button>
+                    <p>LCD Monitor</p>
+                </div>
+
+                <p style="margin-left: 177px;" class="cartpage__price">$650</p>
+                <input style="margin-left: 282px;" type="number" min="0" max="100" value="1">
+                <p style="margin-left: 281px;" class="subtotal">$650</p>
+            </div>
+
+            <div class="cartpage__item2">
+                <div class="cartpage_img">
+                    <img src="./assets/icons/small-havit.svg" alt="small-havit">
+                    <p>H1 Gamepad</p>
+                </div>
+
+                <p style="margin-left: 177px;" class="cartpage__price">$550</p>
+                <input style="margin-left: 282px;" type="number" min="0" max="100" value="2">
+                <p style="margin-left: 281px;" class="subtotal">$1100</p>
+            </div>
+
+            <div class="cartpage__buttons">
+                <button class="return-shop-button">Return To Shop</button>
+                <button class="update-cart-button">Update Cart</button>
+            </div>
         </div>
-    </main>
+
+    </div>
+
+    <!-- Coupon section  -->
+
+    <div class="coupon-inner container">
+        <div class="coupon">
+            <div class="coupon-area">
+                <input type="text" placeholder="Coupon Code">
+                <button class="coupon__btn">Apply Coupon</button>
+            </div>
+
+            <div class="checkout">
+                <h2>Cart Total</h2>
+                <div class="cart-total">
+                    <p class="cart-subtotal">Subtotal:</p>
+                    <p>$1750</p>
+                </div>
+
+                <hr>
+                <div class="cart-total">
+                    <p class="cart-shipping">Shipping:</p>
+                    <p>Free</p>
+                </div>
+
+                <hr>
+                <div class="cart-total">
+                    <p class="cart__total">Total: </p>
+                    <p>$1750</p>
+                </div>
+
+                <button class="checkout__btn"><a href="./checkout-page.html">Procees to checkout</a></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
 
 
     <!-- Footer -->
@@ -233,6 +291,7 @@
         </div>
 
     </footer>
+
 
 </body>
 
